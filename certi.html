@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates Display</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    /* Grid Layout */
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Certificate Card */
+    .certificate-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .certificate-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .certificate-card p {
+      padding: 10px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* Hover Effect */
+    .certificate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Responsive Text */
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 1.5rem;
+      }
+      .certificate-card p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="certificates-section">
+    <h1 class="section-title">My Certificates</h1>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <img src="cert1.jpg" alt="Certificate 1">
+        <p>Certificate Title 1</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert2.jpg" alt="Certificate 2">
+        <p>Certificate Title 2</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert3.jpg" alt="Certificate 3">
+        <p>Certificate Title 3</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert4.jpg" alt="Certificate 4">
+        <p>Certificate Title 4</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert5.jpg" alt="Certificate 5">
+        <p>Certificate Title 5</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert6.jpg" alt="Certificate 6">
+        <p>Certificate Title 6</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert7.jpg" alt="Certificate 7">
+        <p>Certificate Title 7</p>
+      </div>
+      <div class="certificate-card">
+        <img src="cert8.jpg" alt="Certificate 8">
+        <p>Certificate Title 8</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
